@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- import the script.js file -->
+    <!-- We need to import JQUERY Library to make the api call-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Teams.js"></script>
+
+  </head>
+  
+  <!-- Call the int function when website loads -->
+  <body onload="init()">
+    <div>
+      <!--  Header or Banner -->
+      <div id="header">
+        <h1> Database Project </h1>
+      </div>
+      <!--  nav bar -->
+      <nav id='nav'>
+        <h2>Teams Page</h2>
+        <a href="index.html" class="button">HOME</a>   
+        <a href="Players.html" class="button">PLAYERS</a> 
+        <a href="Mouses.html" class="button">MOUSES</a>
+        <a href="Teams.html" class="button">TEAMS</a>
+        <a href="Region.html" class="button">REGION</a>
+
+      </nav>
+      
+      <div class="container">
+        
+        <div class='panel'>
+          <div class="container filter">
+            <div>
+          
+                   
+              <h4> Search for players by teams
+              </h4>
+              <input style="flex:2;text-align:right;" type="text" 
+                id="teamName" placeholder="Enter team" >  <br>      
+              <a class="button" onclick="filter()"> Search </a><br>
+              <h4 id="count"></h4>
+            </div>
+          </div>
+        </div>
+        
+        <div id='centerpanel' class='container'>
+          
+        </div>
+        
+        <div class='panel'>
+         
+        </div>
+        
+      </div>
+
+      <div id='foot'>
+        <h3> Created by Qi Luo, MingXiang Zou </h3>
+      </div>
+
+    </div>
+    
+  </body>
+</html>
